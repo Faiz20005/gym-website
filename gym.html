@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نادي وقت الأقوياء | لياقة حديد وسباحة</title>
+    <style>
+        /* التنسيقات العامة */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        nav {
+            background-color: #2a5298;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #f7d417;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        footer {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        section {
+            margin-bottom: 3rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        h2 {
+            color: #1e3c72;
+            border-bottom: 3px solid #f7d417;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+            margin-top: 0;
+        }
+        h3 {
+            color: #2a5298;
+        }
+        .hero {
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            margin: 1rem 0;
+        }
+        .program, .event {
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            border-left: 4px solid #f7d417;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+        .program h3, .event h3 {
+            margin-top: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        form label {
+            margin-top: 1rem;
+            font-weight: bold;
+            color: #1e3c72;
+        }
+        form input, form textarea, form select, form button {
+            padding: 0.8rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        form button {
+            background-color: #f7d417;
+            color: #1e3c72;
+            border: none;
+            cursor: pointer;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        form button:hover {
+            background-color: #1e3c72;
+            color: white;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        .contact-info div {
+            background-color: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            min-width: 200px;
+        }
+        .contact-info i {
+            margin-left: 0.5rem;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>نادي وقت الأقوياء</h1>
+        <p>التميز في لياقة الحديد والسباحة الاحترافية</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">عن النادي</a></li>
+            <li><a href="#programs">برامجنا</a></li>
+            <li><a href="#schedule">الجدول</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>مرحباً بكم في وقت الأقوياء</h2>
+            <p>نادي متكامل يقدم أفضل برامج اللياقة البدنية وبناء الأجسام والسباحة الاحترافية تحت إشراف مدربين معتمدين.</p>
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="صالة الألعاب الرياضية">
+        </section>
+
+        <section id="about">
+            <h2>عن نادي وقت الأقوياء</h2>
+            <p>نادي وقت الأقوياء هو وجهة المحترفين والهواة في مجال اللياقة البدنية وبناء الأجسام والسباحة. تأسس النادي عام 2015 بمفهوم عصري يجمع بين أحدث الأجهزة الرياضية والتدريب العلمي المدعوم بخبراء في المجال.</p>
+            <p>نفتخر بأننا النادي الأول في المنطقة الذي يقدم:</p>
+            <ul>
+                <li>أحدث صالات كمال الأجسام مجهزة بأفضل المعدات العالمية</li>
+                <li>برامج سباحة احترافية في مسبح أولمبي معتمد</li>
+                <li>مدربون معتمدون دولياً في اللياقة وبناء الأجسام</li>
+                <li>برامج تغذية متكاملة تحت إشراف أخصائيين</li>
+                <li>بيئة تحفيزية تساعدك على تحقيق أهدافك</li>
+            </ul>
+        </section>
+
+        <section id="programs">
+            <h2>برامجنا الرياضية</h2>
+            <div class="program">
+                <h3>لياقة الحديد</h3>
+                <p>برامج متكاملة لبناء العضلات والقوة البدنية تحت إشراف مدربين محترفين. نقدم تدريبات فردية وجماعية تناسب جميع المستويات من المبتدئين إلى المحترفين.</p>
+            </div>
+            <div class="program">
+                <h3>السباحة الاحترافية</h3>
+                <p>دورات سباحة لجميع الأعمار والمستويات في مسبح نصف أولمبي مع نظام تعقيم متطور. نوفر تدريبات احترافية للمتسابقين وبرامج تأهيلية للإصابات.</p>
+            </div>
+            <div class="program">
+                <h3>اللياقة العامة</h3>
+                <p>برامج متكاملة تشمل تمارين الكارديو ورفع الأثقال والتمارين الوظيفية لتحقيق أقصى استفادة من وقت التمرين.</p>
+            </div>
+        </section>
+
+        <section id="schedule">
+            <h2>جدول التدريبات</h2>
+            <div class="event">
+                <h3>لياقة الحديد</h3>
+                <p>الأحد إلى الخميس - من 6 صباحاً إلى 11 مساءً</p>
+                <p>الجمعة - من 4 عصراً إلى 10 مساءً</p>
+                <p>السبت - من 8 صباحاً إلى 12 ظهراً</p>
+            </div>
+            <div class="event">
+                <h3>السباحة</h3>
+                <p>الفترة الصباحية: 6 صباحاً إلى 12 ظهراً (للنساء)</p>
+                <p>الفترة المسائية: 4 عصراً إلى 10 مساءً (للرجال)</p>
+                <p>أيام العائلات: الجمعة من 4 عصراً إلى 10 مساءً</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>انضم إلينا</h2>
+            <form>
+                <label for="name">الاسم الكامل:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">رقم الهاتف:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="program">اختر البرنامج:</label>
+                <select id="program" name="program">
+                    <option value="bodybuilding">لياقة الحديد</option>
+                    <option value="swimming">السباحة</option>
+                    <option value="fitness">اللياقة العامة</option>
+                    <option value="all">البرنامج الشامل</option>
+                </select>
+
+                <label for="message">رسالتك (اختياري):</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <button type="submit">إرسال طلب العضوية</button>
+            </form>
+
+            <div class="contact-info">
+                <div>
+                    <h3>العنوان</h3>
+                    <p>الباحة، حي العقيق، شارع الهرم</p>
+                </div>
+                <div>
+                    <h3>الهاتف</h3>
+                    <p>0501489015</p>
+                </div>
+                <div>
+                    <h3>البريد الإلكتروني</h3>
+                    <p>faiz.alghamdi.ds@gmail.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; <span id="year"></span> نادي وقت الأقوياء</p>
+        <p>تصميم وتطوير: فايز الغامدي</p>
+    </footer>
+
+    <script>
+        // إضافة السنة الحالية في الفوتر
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
